@@ -1,4 +1,10 @@
-function nhap(){
+document.querySelector("form").addEventListener("submit",(e) => {
+    e.preventDefault()
+})
+document.querySelector("button").addEventListener("click",() => {
+    submit()
+})
+function submit(){
     var dayso = document.querySelector(".dayso");
     var arrNumber = dayso.value.split(" ").map((item) => {
         return parseInt(item);

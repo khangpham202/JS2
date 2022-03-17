@@ -1,4 +1,10 @@
-function nhap(){
+document.querySelector("form").addEventListener("submit",(e) => {
+    e.preventDefault()
+})
+document.querySelector("button").addEventListener("click",() => {
+    submit()
+})
+function submit(){
     var fullname = document.querySelector(".fullname");
     var counta = fullname.value.split("a").length - 1;
     document.querySelector(".counta").innerHTML = counta;

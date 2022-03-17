@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
+
 </head>
+<style>
+    label {
+        margin-top: 14px;
+    }
+</style>
+
 <body>
-    <div style="border: 2px solid skyblue;width: 25vw; height: 20vw;">
-        <div>
-            <div style="display: flex;">
-                <p>Họ tên:</p>
-                <input class="dayso" type="text" name="" id="" style="height: 25px;margin-left: 63px;margin-top: 10px;" placeholder="Nhập tên">
-            </div> 
-            <div style="display: flex;margin-top: 10px;">
-                <p>Họ:</p>
-                <div class="maxValue" style="height: 25px;margin-left: 87px;margin-top: 10px;border: 1px solid black;width: 170px;"></div>
-            </div>
-            <div style="display: flex;margin-top: 10px;">
-                <p>Tên:</p>
-                <div class="sumEven" style="height: 25px;margin-left: 80px;margin-top: 10px;border: 1px solid black;width: 170px;"></div>
-            </div>
-            <div style="display: flex;margin-top: 10px;">
-                <p>Họ lót:</p>
-                <div class="firstEven" style="height: 25px;margin-left: 63px;margin-top: 10px;border: 1px solid black;width: 170px;"></div>
-            </div>
-            <div style="display: flex;margin-top: 10px;">
-                <p>Viết hoa đầu từ:</p>
-                <div class="maxEven" style="height: 25px;margin-left: 5px;margin-top: 10px;border: 1px solid black;width: 170px;"></div>
-            </div>
+    <form style="border: 2px solid skyblue;width: 25vw; height: 19vw;">
+        <div style="display: flex;">
+            <label for="">Nhập dãy số:</label>
+            <input class="dayso" type="text" name="" id="" style="height: 25px;margin-left: 63px;margin-top: 10px;"
+                placeholder="Nhập dãy số">
         </div>
-        <button onclick="nhap()" style="width: 100px;height: 100px;"></button>
-    </div>
+        <div style="display: flex;margin-top: 10px;">
+            <label for="">Số lớn nhất:</label>
+            <div class="maxValue"
+                style="height: 25px;margin-left: 69px;margin-top: 10px;border: 1px solid black;width: 170px;"></div>
+        </div>
+        <div style="display: flex;margin-top: 10px;">
+            <label for="">Tổng các số dương:</label>
+            <div class="sumEven"
+                style="height: 25px;margin-left: 20px;margin-top: 10px;border: 1px solid black;width: 170px;"></div>
+        </div>
+        <div style="display: flex;margin-top: 10px;">
+            <label for="">Số chẵn đầu tiên:</label>
+            <div class="firstEven"
+                style="height: 25px;margin-left: 35px;margin-top: 10px;border: 1px solid black;width: 170px;"></div>
+        </div>
+        <div style="display: flex;margin-top: 10px;">
+            <label for="">Số chẵn lớn nhất:</label>
+            <div class="maxEven"
+                style="height: 25px;margin-left: 34px;margin-top: 10px;border: 1px solid black;width: 170px;"></div>
+        </div>
+        <button style="width: 100px;height: 30px;margin-top: 10px;">
+            <p style="font-size: 20px;margin-top: 1px;">Submit</p>
+        </button>
+    </form>
+    
     <script src="b2.js"></script>
 </body>
 
