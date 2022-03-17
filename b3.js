@@ -10,13 +10,12 @@ function submit(){
     document.querySelector(".counta").innerHTML = counta;
     var reverseChar = ""
     for(let i = 0; i < fullname.value.length; i++){
-        
         if(fullname.value[i].charCodeAt(0) !== 32){
             if(fullname.value[i].charCodeAt(0) > 90){
                 reverseChar += String.fromCharCode(fullname.value[i].charCodeAt(0)-32)
              }
              else{
-                 reverseChar += String.fromCharCode(fullname.value[i].charCodeAt(0)+32)
+                reverseChar += String.fromCharCode(fullname.value[i].charCodeAt(0)+32)
              }
         }
         else{

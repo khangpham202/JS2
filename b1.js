@@ -1,5 +1,7 @@
-var fullName = document.querySelector(".fullname");
-fullName.addEventListener("change", (e) => {
+document.querySelector("form").addEventListener("submit",(e) => {
+    e.preventDefault()
+    var fullName = document.querySelector(".fullname");
+    
     var firstName = fullName.value.split(' ')[0]; 
     var lastName = fullName.value.split(' ')[fullName.value.split(' ').length-1]; 
     document.querySelector(".firstName").innerHTML = firstName;
@@ -15,8 +17,8 @@ fullName.addEventListener("change", (e) => {
         hl.innerHTML = arrName.join(" ")
     }
     var toUpper = document.querySelector(".toUpper")
-   
     toUpper.innerHTML = firstChar.join(" ");
+   
 })
 
 
